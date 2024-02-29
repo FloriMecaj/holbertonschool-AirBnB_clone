@@ -1,45 +1,26 @@
-#!/usr/bin/env python3
-"""
-This module contains the entry point of the command interpreter.
-"""
-
+#!/usr/bin/python3
+"""Defines the HBnB console."""
 import cmd
 
-
 class HBNBCommand(cmd.Cmd):
-    """
-    HBNBCommand class definition
-    """
+    """Defines the HolbertonBnB command interpreter"""
 
-    prompt = '(hbnb) '
-
-    def do_quit(self, arg):
-        """
-        Quit command to exit the program
-        """
-        return True
-
-    def do_EOF(self, arg):
-        """
-        EOF command to exit the program
-        """
-        print()
-        return True
+    prompt = "(hbnb) "
 
     def emptyline(self):
-        """
-        An empty line + ENTER shouldn’t execute anything
-        """
+        """Do nothing upon receiving an empty line."""
         pass
 
-    def do_help(self, arg):
-        """
-        Help command. This action is provided by default by cmd
-        but you should keep it updated and documented as you work through tasks
-        """
-        super().do_help(arg)
 
 
-if __name__ == '__main__':
-    interpreter = HBNBCommand()
-    interpreter.cmdloop()
+    def do_quit(self, arg):
+        """Quit command to exit the program."""
+        exit()
+
+    def do_EOF(self, arg):
+        """EOF signal to exit the program."""
+        print()
+        exit()
+
+if __name__ == "__main__":
+    HBNBCommand().cmdloop()
