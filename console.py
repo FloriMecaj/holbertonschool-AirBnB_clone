@@ -15,12 +15,12 @@ class HBNBCommand(cmd.Cmd):
 
     def do_quit(self, arg):
         """Quit command to exit the program."""
-        exit()
+        exit(0)
 
     def do_EOF(self, arg):
         """EOF signal to exit the program."""
         print()
-        exit()
+        exit(0)
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
