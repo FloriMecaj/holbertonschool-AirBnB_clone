@@ -64,7 +64,7 @@ class HBNBCommand(cmd.Cmd):
 
         obj_id = args[1]
         key = "{}.{}".format(args[0], obj_id)
-        obj_dict = models.storage.all()
+        obj_dict = BaseModel.storage.all()
         if key in obj_dict:
             obj = obj_dict[key]
             print(obj)
