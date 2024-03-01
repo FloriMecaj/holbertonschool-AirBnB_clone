@@ -41,13 +41,6 @@ Here are some examples of how to use the console:
 (hbnb) all
 ```
 
-### AUTHORS
-
-- [@arbesavdiaj](https://github.com/arbesavdiaj)
-- [@FloriMecaj](https://github.com/FloriMecaj)
-- [@Remz97](https://github.com/Remz97)
-
-
 ### Project Tasks
 ```
 1. Write a command interpreter to manage your AirBnB objects. This is the first step towards building your first full web application: the AirBnB clone.
@@ -60,3 +53,10 @@ Here are some examples of how to use the console:
 
 ### Future Work
 This project is the first step towards building a full web application. The next steps will involve creating HTML/CSS templates, setting up database storage, creating an API, and integrating the front-end.
+
+
+### AUTHORS
+
+- [@arbesavdiaj](https://github.com/arbesavdiaj)
+- [@FloriMecaj](https://github.com/FloriMecaj)
+- [@Remz97](https://github.com/Remz97)
