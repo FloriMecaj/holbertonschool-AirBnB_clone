@@ -83,3 +83,4 @@ class TestBaseModel(unittest.TestCase):
         base = BaseModel()
         x = base
         self.assertEqual(base, x)
+        print('OK')
